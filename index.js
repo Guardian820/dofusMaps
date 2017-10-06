@@ -64,7 +64,7 @@ pyshell.end(err => {
   }
 
   console.log('Now combining all the pieces in one big map, again just wait..., when done you will see: "-> finished!"');
-  if (shell.exec(`cd maps && montage @../mapChunkList.txt -tile 40x -geometry +0+0 -strip -interlace Plane -quality 100 ../dofusMap.jpg`, (code, stdout, stderr) => {
+  shell.exec(`cd maps && montage @../mapChunkList.txt -tile 40x -geometry +0+0 -strip -interlace Plane -quality 100 ../dofusMap.jpg`, (code, stdout, stderr) => {
     if (code !== 0) {
       console.log('Error coudn\'t combine the chunks.');
       console.log(stderr);
@@ -73,5 +73,5 @@ pyshell.end(err => {
       console.log('-> finished!');
       console.log(`Your map is at ${path.join(__dirname, 'dofusMap.jpg')}`);
     }
-  }));
+  });
 });
