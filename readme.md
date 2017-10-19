@@ -36,6 +36,6 @@ or
 ## Contributors
 
 - Mavvo  *(Maintainer)* - [@Balciseri](https://github.com/balciseri)
-
+- [@blankoworld](https://github.com/blankoworld) inspired me with his [script](https://gist.githubusercontent.com/blankoworld/78b588fc6d9f58c9fd93b4ec7424cbfa/raw/1faa691036eddf8e50ead628bcd3186485b8fa23/generate_map.sh)
 ## License
 MIT
